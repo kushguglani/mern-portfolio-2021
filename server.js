@@ -7,6 +7,8 @@ const port = process.env.PORT || 80;
 const path = require('path');
 const publicPath = path.join(__dirname, './public');
 
+console.log(process.env.PORT)
+
 //setup the server to serve static files from the public folder
 app.use(express.static(publicPath));
 
